@@ -3,29 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Katik | Kalkulator Matematik</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <header>
-            <h1>Katik | Kalkulator matematik</h1>
+            <h1>Katik | Kalkulator Matematik</h1>
         </header>
         <main>
             <div class="container">
                 <div class="card">
                     <div class="content-header">
-                        <h2>Welcome to Katik</h2>
+                        <h2>Welcome to <span>Katik</span></h2>
                         <p>
                             Situs web sederhana yang membantu menghitung luas dan keliling bangun datar. Dengan
                             memasukkan ukuran sisi bangun datar, Katik Web dapat menampilkan hasil perhitungan luas dan
-                            keliling dengan cepat dan akurat.
+                            keliling dengan cepat dan akurat
                         </p>
                     </div>
                     <div class="content-body">
                         <div class="card">
                             <h3>Luas Persegi</h3>
                             <div class="keterangan">
-                                <img src="assets/persegi.jpg" alt="persegi" />
+                                <img src="assets/persegi.jpg" alt="Luas Persegi Image" />
                                 <div>
                                     <p>Luas persegi dihitung dengan mengalikan panjang sisi dengan lebar sisi.</p>
                                     <p>L = S x S</p>
@@ -33,30 +33,39 @@
                                 </div>
                             </div>
                             <form action="">
-                                <input type="number" />
-                                <button>Hitung</button>
-                                <button>reset</button>
+                                <label for="luasPersegiInput">Hitung Luas Persegi</label>
+                                <div class="container-input">
+                                    <input type="number" id="luasPersegiInput" />
+                                    <button type="submit">Hitung</button>
+                                    <button type="reset">Reset</button>
+                                </div>
                             </form>
                         </div>
                         <div class="card">
-                            <h3>Keliling Persegi</h3>
+                            <h3>Kelilling Persegi</h3>
                             <div class="keterangan">
-                                <img src="assets/persegi.jpg" alt="persegi" />
+                                <img src="assets/persegi.jpg" alt="Keliling Persegi Image" />
                                 <div>
                                     <p>Keliling persegi dihitung dengan menjumlahkan semua sisi persegi.</p>
-                                    <p>K = 4 x s</p>
+                                    <p>K = 4 x S</p>
                                     <p>Di mana s adalah panjang sisi persegi.</p>
                                 </div>
                             </div>
                             <form action="">
-                                <input type="number" />
-                                <button>Hitung</button>
-                                <button>reset</button>
+                                <label for="kelilingPersegiInput">Hitung Keliling Persegi</label>
+                                <div class="container-input">
+                                    <input type="number" id="kelilingPersegiInput" />
+                                    <button type="submit">Hitung</button>
+                                    <button type="reset">Reset</button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <footer>
+            <p>&copy; 2024 Adit Praditia. All rights reserved.</p>
+        </footer>
     </body>
 </html>

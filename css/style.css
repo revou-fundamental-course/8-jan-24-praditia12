@@ -1,18 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
 }
 
 header {
     text-align: center;
     background-color: #FFA62B;
-    padding: 40px 0;
+    padding: 20px 0;
     color: white;
 }
 
 .container {
-    margin: 28px;
+    margin: 20px;
 }
 
 .card {
@@ -20,17 +21,26 @@ header {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 40px;
+    padding: 20px;
+    background-color: #fff;
 } 
 
 .content-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+}
+
+span {
+    color: #FFA62B;
 }
 
 .content-body {
     display: flex;
     gap: 20px;
+}
+
+.content-body .card {
+    border: 4px dashed #FFA62B;
 }
 
 .content-body .card h3 {
@@ -43,9 +53,46 @@ header {
 }
 
 form {
-    margin-top: 24px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.container-input {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex-grow: 3;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
-    flex: 2;
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #FFA62B;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ec9128;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFA62B;
+    color: #fff;
 }
