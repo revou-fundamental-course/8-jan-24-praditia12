@@ -90,6 +90,12 @@ button:hover {
     background-color: #ec9128;
 }
 
+button:active {
+    background-color: #FFA62B;
+    transform: translateY(2px);
+    box-shadow: 2px 2px #e4e4e4;
+}
+
 footer {
     text-align: center;
     padding: 10px;
