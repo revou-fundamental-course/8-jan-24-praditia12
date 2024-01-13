@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    text-align: center;
+    background-color: #FFA62B;
+    padding: 40px 0;
+    color: white;
+}
+
+.container {
+    margin: 28px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+} 
+
+.content-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content-body {
+    display: flex;
+    gap: 20px;
+}
+
+.content-body .card h3 {
+    text-align: center;
+}
+
+.keterangan {
+    display: flex;
+    gap: 16px;
+}
+
+form {
+    margin-top: 24px;
+}
+
+button {
+    flex: 2;
+}
