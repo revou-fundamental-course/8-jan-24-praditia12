@@ -40,16 +40,17 @@ function hitungLuas() {
     heading.innerHTML = "Hasil";
 
     info = document.createElement("input");
-    info.value = `S = ${panjangSisi} x ${panjangSisi}`;
+    info.value = `L = ${panjangSisi} x ${panjangSisi}`;
     info.setAttribute("readonly", "true");
 
     result = document.createElement("input");
-    result.value = `S = ${luas}`;
+    result.value = `L = ${luas}`;
     result.setAttribute("readonly", "true");
 
-    containerArea.append(heading, info, result);
+    desc = document.createElement("p");
+    desc.innerText = `Maka Luas dari persegi tersebut ${luas}`;
 
-    console.log("Luas Persegi: " + luas);
+    containerArea.append(heading, info, result, desc);
 }
 
 function hitungKeliling() {
@@ -70,7 +71,10 @@ function hitungKeliling() {
     result.value = `K = ${keliling}`;
     result.setAttribute("readonly", "true");
 
-    containerPerimeter.append(heading, info, result);
+    desc = document.createElement("p");
+    desc.innerText = `Maka Keliling dari persegi tersebut ${keliling}`;
+
+    containerPerimeter.append(heading, info, result, desc);
 }
 
 function resetFormLuas() {
