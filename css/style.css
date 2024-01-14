@@ -113,3 +113,35 @@ footer {
     background-color: #FFA62B;
     color: #fff;
 }
+
+/* Gaya untuk layar berukuran lebih kecil atau sama dengan 600px */
+@media only screen and (max-width: 600px) {
+    .content-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .keterangan {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .container-input {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+}
+
+/* Gaya untuk layar berukuran antara 601px dan 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .content-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
