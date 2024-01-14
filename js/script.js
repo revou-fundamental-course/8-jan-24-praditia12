@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const submitFormArea = document.getElementById("calculateArea");
     const submitFormPerimeter = document.getElementById("calculatePerimeter");
-    const reset = document.getElementById("reset");
+
+    const resetLuas = document.getElementById("resetLuas");
+    const resetKeliling = document.getElementById("resetKeliling");
 
     submitFormArea.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -13,9 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
         hitungKeliling();
     });
 
-    reset.addEventListener("click", function (event) {
+    resetLuas.addEventListener("click", function (event) {
         event.preventDefault();
-        resetForm();
+        resetFormLuas();
+    });
+
+    resetKeliling.addEventListener("click", function (event) {
+        event.preventDefault();
+        resetFormKeliling();
     });
 });
 
@@ -23,6 +30,8 @@ const containerArea = document.getElementById("resultCalculateArea");
 const containerPerimeter = document.getElementById("resultCalculatePerimeter");
 
 function hitungLuas() {
+    containerArea.innerHTML = "";
+
     let panjangSisi = parseFloat(document.getElementById("luasPersegiInput").value);
 
     let luas = panjangSisi * panjangSisi;
@@ -44,6 +53,8 @@ function hitungLuas() {
 }
 
 function hitungKeliling() {
+    containerPerimeter.innerHTML = "";
+
     let panjangSisi = parseFloat(document.getElementById("kelilingPersegiInput").value);
 
     let keliling = 4 * panjangSisi;
@@ -62,10 +73,14 @@ function hitungKeliling() {
     containerPerimeter.append(heading, info, result);
 }
 
-function resetForm() {
+function resetFormLuas() {
     document.getElementById("luasPersegiInput").value = "";
-    document.getElementById("kelilingPersegiInput").value = "";
 
     containerArea.innerHTML = "";
+}
+
+function resetFormKeliling() {
+    document.getElementById("kelilingPersegiInput").value = "";
+
     containerPerimeter.innerHTML = "";
 }
