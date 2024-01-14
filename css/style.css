@@ -96,6 +96,17 @@ button:active {
     box-shadow: 2px 2px #e4e4e4;
 }
 
+#resultCalculateArea, #resultCalculatePerimeter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+#resultCalculateArea input:focus , #resultCalculatePerimeter input:focus{
+    outline: none;
+}
+
 footer {
     text-align: center;
     padding: 10px;

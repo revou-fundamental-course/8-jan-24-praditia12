@@ -28,14 +28,15 @@
                                     <p>Di mana s adalah panjang sisi persegi.</p>
                                 </div>
                             </div>
-                            <form action="">
+                            <form id="calculateArea">
                                 <label for="luasPersegiInput">Hitung Luas Persegi</label>
                                 <div class="container-input">
                                     <input type="number" id="luasPersegiInput" />
                                     <button type="submit">Hitung</button>
-                                    <button type="reset">Reset</button>
+                                    <button type="reset" id="reset">Reset</button>
                                 </div>
                             </form>
+                            <div id="resultCalculateArea"></div>
                         </div>
                         <div class="card">
                             <h3>Kelilling Persegi</h3>
@@ -50,7 +51,7 @@
                                     <p>Di mana s adalah panjang sisi persegi.</p>
                                 </div>
                             </div>
-                            <form action="">
+                            <form id="calculatePerimeter">
                                 <label for="kelilingPersegiInput">Hitung Keliling Persegi</label>
                                 <div class="container-input">
                                     <input type="number" id="kelilingPersegiInput" />
@@ -58,6 +59,7 @@
                                     <button type="reset">Reset</button>
                                 </div>
                             </form>
+                            <div id="resultCalculatePerimeter"></div>
                         </div>
                     </div>
                 </div>
@@ -66,5 +68,7 @@
         <footer>
             <p>&copy; 2024 Adit Praditia. All rights reserved.</p>
         </footer>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
